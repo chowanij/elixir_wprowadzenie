@@ -1,0 +1,97 @@
+{
+  "name": "projekt_web",
+  "type": "directory",
+  "children": [
+    {
+      "name": "src",
+      "type": "directory",
+      "children": [
+        {
+          "name": "components",
+          "type": "directory",
+          "children": [
+            {
+              "name": "Header.js",
+              "type": "file",
+              "content": "// Komponent nagłówka\nfunction Header() {\n  return <header>Moja Aplikacja</header>;\n}\n\nexport default Header;"
+            },
+            {
+              "name": "Footer.js",
+              "type": "file",
+              "content": "// Komponent stopki\nfunction Footer() {\n  return <footer>Copyright 2023</footer>;\n}\n\nexport default Footer;"
+            },
+            {
+              "name": "Button.js",
+              "type": "file",
+              "content": "// Komponent przycisku\nfunction Button({ text, onClick }) {\n  return <button onClick={onClick}>{text}</button>;\n}\n\nexport default Button;"
+            }
+          ]
+        },
+        {
+          "name": "pages",
+          "type": "directory",
+          "children": [
+            {
+              "name": "Home.js",
+              "type": "file",
+              "content": "// Strona główna\nimport Header from '../components/Header';\nimport Footer from '../components/Footer';\n\nfunction Home() {\n  return (\n    <div>\n      <Header />\n      <main>Strona główna</main>\n      <Footer />\n    </div>\n  );\n}\n\nexport default Home;"
+            },
+            {
+              "name": "About.js",
+              "type": "file",
+              "content": "// O nas\nimport Header from '../components/Header';\nimport Footer from '../components/Footer';\n\nfunction About() {\n  return (\n    <div>\n      <Header />\n      <main>O nas</main>\n      <Footer />\n    </div>\n  );\n}\n\nexport default About;"
+            }
+          ]
+        },
+        {
+          "name": "utils",
+          "type": "directory",
+          "children": [
+            {
+              "name": "helpers.js",
+              "type": "file",
+              "content": "// Funkcje pomocnicze\nexport function formatDate(date) {\n  return new Date(date).toLocaleDateString();\n}\n\nexport function capitalize(text) {\n  return text.charAt(0).toUpperCase() + text.slice(1);\n}"
+            }
+          ]
+        },
+        {
+          "name": "App.js",
+          "type": "file",
+          "content": "// Główny komponent aplikacji\nimport Home from './pages/Home';\n\nfunction App() {\n  return <Home />;\n}\n\nexport default App;"
+        }
+      ]
+    },
+    {
+      "name": "public",
+      "type": "directory",
+      "children": [
+        {
+          "name": "index.html",
+          "type": "file",
+          "content": "<!DOCTYPE html>\n<html lang=\"pl\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Moja Aplikacja</title>\n</head>\n<body>\n  <div id=\"root\"></div>\n  <script src=\"../src/index.js\"></script>\n</body>\n</html>"
+        },
+        {
+          "name": "styles",
+          "type": "directory",
+          "children": [
+            {
+              "name": "main.css",
+              "type": "file",
+              "content": "body {\n  margin: 0;\n  font-family: Arial, sans-serif;\n}\n\nheader {\n  background-color: #282c34;\n  color: white;\n  padding: 20px;\n}\n\nfooter {\n  background-color: #f5f5f5;\n  padding: 10px;\n  text-align: center;\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "package.json",
+      "type": "file",
+      "content": "{\n  \"name\": \"projekt-web\",\n  \"version\": \"1.0.0\",\n  \"description\": \"Przykładowy projekt\",\n  \"main\": \"src/index.js\",\n  \"scripts\": {\n    \"start\": \"react-scripts start\",\n    \"build\": \"react-scripts build\",\n    \"test\": \"react-scripts test\"\n  },\n  \"dependencies\": {\n    \"react\": \"^17.0.2\",\n    \"react-dom\": \"^17.0.2\",\n    \"react-scripts\": \"4.0.3\"\n  }\n}"
+    },
+    {
+      "name": "README.md",
+      "type": "file",
+      "content": "# Projekt Web\n\nPrzykładowy projekt wygenerowany ze struktury JSON przy użyciu Elixir.\n\n## Uruchomienie\n\n```\nnpm install\nnpm start\n```\n\n## Struktura projektu\n\n- src/ - kod źródłowy\n- public/ - pliki publiczne\n"
+    }
+  ]
+} 
