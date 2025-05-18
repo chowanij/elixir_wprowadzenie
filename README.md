@@ -7,8 +7,6 @@ Ten projekt służy jako wprowadzenie do języka programowania Elixir. Struktura
 - `01_podstawy` - Pierwsze kroki z Elixir, instalacja, uruchamianie kodu
 - `02_typy_danych` - Typy danych w Elixir (liczby, łańcuchy znaków, atomy, itd.)
 - `03_funkcje` - Definiowanie i używanie funkcji
-- `03_5_operacje_na_tekstach` - Operacje na stringach i wyrażenia regularne
-- `03_7_funkcyjne_wzorce` - Operator pipe i porównanie z innymi językami
 - `04_instrukcje_sterujace` - Instrukcje warunkowe, przepływ sterowania
 - `05_kolekcje` - Listy, mapy, struktury, krotki
 - `06_moduly` - Organizacja kodu w modułach
@@ -189,3 +187,4 @@ W katalogu `10_praktyczne_zadania` znajdziesz przykłady zastosowania Elixira do
 - [ElixirForum](https://elixirforum.com/) - społeczność Elixir, gdzie można zadawać pytania
 - [Elixir Radar](https://elixir-radar.com/) - newsletter o nowościach w ekosystemie Elixir
 - [Awesome Elixir](https://github.com/h4cc/awesome-elixir) - lista bibliotek i zasobów dla Elixira
+- [Pragmatic Studio](https://pragmaticstudio.com/elixir) - baredzo dobre kursy z Elixira
